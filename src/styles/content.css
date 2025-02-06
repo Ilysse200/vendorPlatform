@@ -1,0 +1,137 @@
+/* .gallery-item{
+    tex
+} */
+
+.gallery-container{
+    margin-right: 24px;
+    margin-left: 37px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6px;
+    text-align: center;
+    font-size: 23px;
+}
+h1{
+    margin-top: 28px;
+    margin-left: 44px;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.gallery-image{
+    justify-content: space-between;
+    gap:0px;
+    padding-bottom: 10px;
+}
+
+.productsClass{
+    display: flex;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.productImage{
+    width:600px ;
+    height: 600px;
+}
+.productTitle{
+    font-size: 45px;
+    padding-top: 20px;
+}
+/* h2{
+    font-size: 20px;
+    font-weight: bold;
+} */
+.productsClass h2{
+    /* font-weight: bold; */
+    /* font-size: 20px; */
+    padding-bottom: 6px;
+}
+.productsClass p{
+    font-weight: bold;
+    /* font-size: 20px; */
+    padding-bottom: 6px;
+}
+.rating{
+    padding-bottom: 10px;
+}
+.shop-Button{
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 20px;
+    padding-left: 20px;
+    display: flex;
+    /* text-align: center; */
+    /* flex: 1; */
+    /* margin-left: 250px; */
+    margin-left: 850px;
+    width:150px;
+    height: 60px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    background-color: lightgray;
+}
+/* ============================= */
+/*        RESPONSIVE DESIGN      */
+/* ============================= */
+
+/* Tablet Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .gallery-container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .productImage {
+        width: 400px;
+        height: 400px;
+    }
+
+    .productTitle {
+        font-size: 35px;
+    }
+
+    .shop-Button {
+        width: 130px;
+        height: 55px;
+        font-size: 18px;
+    }
+}
+
+/* Mobile Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .productImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .productTitle {
+        font-size: 28px;
+    }
+
+    .productsClass {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .shop-Button {
+        width: 120px;
+        height: 50px;
+        font-size: 16px;
+    }
+}

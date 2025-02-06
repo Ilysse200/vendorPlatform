@@ -1,0 +1,205 @@
+.holder2{
+    /* justify-content: left; */
+        display: flex;
+        padding-right: 15px;
+        font-size: 25px;
+        padding-bottom: 25px;
+        padding-top: 30px;
+        width: 60%;
+        margin:0;
+        flex-wrap: wrap;
+        /* grid-template-columns: repeat(3, 1fr); */
+        /* flex: 1; */
+        /* flex-direction: row; */
+        /* flex-wrap: wrap;  Allows responsiveness if needed  
+        justify-content: space-between; /* Centers items in the row 
+        gap: 2px;  Adds spacing between cards 
+        margin:0;*/
+}
+.holder2 h1{
+    text-align: start;
+
+}
+
+.image-viewer{
+    /* margin-left: 50px; 
+    display: inline-flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    gap:0px;
+    padding-right: 50px;
+    height: 300px;
+    width: 340px;
+    margin-right: 0%;
+}  
+
+.card-content{
+    padding-top: 10px;
+} */
+/* Each card should be displayed in a row */
+.card-holder {
+    display: flex;
+    padding-left: 25px;
+    /* flex-direction: row;  */
+    align-items: center; /* Centers content inside each card */
+    width: 5px; /* Set a fixed width for each card */
+    border: 1px solid #ddd; /* Optional: Adds a border to each card */
+    padding: 3px;
+    text-align: left;
+}
+.card-holder p{
+    text-align: left;
+    padding-bottom: 15px;
+    font-weight: 660px;
+} 
+
+ /* .image-viewer{
+    display: flex;
+    flex-direction: row;
+ }*/
+ /* .star-icons{
+    list-style-type: none;
+    display: flex;
+ } */
+ .card-holder li{
+    list-style-type: none;
+ }
+
+.shop-image{
+    width: 100%;
+    height: 480px;
+}
+.positioningImage{
+    position: relative;
+    display: inline-block;
+    
+}
+.positioningImage p{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    /* font: 64px OverLock, display; */
+    transform: translate(-10%, -30%);
+    font-size: 67px;
+    font-weight: 700;
+    font-family: Overlock, display;
+    font-style: normal;
+    text-transform: none;
+}
+body{
+    font-family: Sen, sans-serif;
+}
+.color-options {
+    display: flex;
+    gap: 10px;
+    border-bottom:1px solid #ccc;
+    /* margin-bottom: 30px; */
+    padding-bottom: 40px;
+    padding-top: 0%;
+    width: 370px;
+}
+
+.color-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.color-inner {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+}
+
+.selected {
+    border: 3px solid #5a4034; /* Darker border to indicate selection */
+}
+
+/* Colors */
+.color1 { background-color: #c2b8a3; }
+.color2 { background-color: #a07355; }
+.color3 { background-color: #e0e0e0; }
+.color4 { background-color: #ffffff; }
+
+/*content at the left side*/
+.side-content{
+    justify-content: space-between;
+    gap: 1px;
+    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 0%;
+    height: 56%;
+
+}
+.side-content p{
+    font-size: 22px;
+    padding-top: 40px;
+    padding-bottom: 45px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+.side-content ul{
+    list-style-type: none;
+    border-bottom:1px solid #ccc;
+    margin-bottom: 70px;
+    width: 370px;
+    /* outline: none; */
+
+}
+.side-content li{
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 35px;
+}
+.property-stars{
+    justify-content: space-between;
+    gap: 5px;
+    padding-right: 10px;
+}
+.products{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.container-home{
+    display: flex;
+    flex-direction: row;
+    gap: 7rem;
+    /* width: 100%;
+    height: 100vh; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    padding-right: 10px;
+    width: 300px;
+    height: 400px;
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .auth-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .auth-box {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .auth-box {
+        width: 100%;
+    }
+}
